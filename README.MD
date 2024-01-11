@@ -627,4 +627,6 @@ Reference **FINAL VIEW** for the files being created or updated  during the setu
                 root /mnt/d/Github-VivifyHealthcare/R_n_D/pythonsample/yourprojectname;
 
 # Contributions:
-Contributions, bug reports, and feature requests are welcome! Please open an issue or submit a pull request to help improve and evolve this boilerplate.
+[Contributions](https://github.com/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/pulls), [bug reports](https://github.com/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=), and [feature requests](https://github.com/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=) are welcome! Please open an [issue](https://github.com/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/issues) or submit a [pull request](https://github.com/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/pulls) to help improve and evolve this boilerplate.
+
+[Tech Stack Connect](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7077616704498896896) | [Join on Discord](https://discord.gg/N6jTp6CXXw) | [Blogs](https://vivifyhealthcare.com/blogs/)

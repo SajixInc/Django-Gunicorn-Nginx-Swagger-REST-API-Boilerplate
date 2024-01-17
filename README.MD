@@ -633,5 +633,18 @@ Reference **FINAL VIEW** for the files being created or updated  during the setu
 
 
 
+______
 
-test codecob workflow
+
+## test codecob workflow
+
+
+[![codecov](https://codecov.io/gh/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/graph/badge.svg?token=L8CW95E9VC)](https://codecov.io/gh/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate)
+
+
+https://codecov.io/gh/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/graphs/sunburst.svg?token=L8CW95E9VC
+
+
+https://codecov.io/gh/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/graphs/tree.svg?token=L8CW95E9VC
+
+https://codecov.io/gh/vivifyhealthcare/Django-Gunicorn-Nginx-Swagger-REST-API-Boilerplate/graphs/icicle.svg?token=L8CW95E9VC

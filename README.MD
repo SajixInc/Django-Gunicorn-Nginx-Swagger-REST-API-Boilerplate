@@ -14,6 +14,8 @@ This repository provides a robust and extensible boilerplate for building RESTfu
 **Nginx:** Enhance your Nginx setup with battle-tested configurations, ensuring a performant and secure web server environment.
 
 
+
+
 # Getting Started
 * Clone the repository.
 * Set up your virtual environment and install dependencies.

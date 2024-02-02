@@ -23,6 +23,39 @@ from drf_yasg import openapi
 # Gunicorn Static file Settings
 from django.conf import settings
 from django.conf.urls.static import static
+from auth_app.models import homemodel
+from django.utils.crypto import get_random_string
+
+### home page login
+from django.utils.crypto import get_random_string
+from django.contrib.auth.models import User
+from django.contrib.auth.hashers import check_password
+from enum import unique
+from django.shortcuts import redirect,render
+from rest_framework import generics, permissions
+
+
+def token():
+    unique_id = get_random_string(length=32)
+    return unique_id
+
+
+token=token()
+
+def login(request,token=token):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        print(name)
+        password = request.POST.get('password')
+        print(password)
+        user = homemodel.objects.get(Username = name)
+        passcode = user.password
+        print(passcode)
+        if passcode==password:
+            return redirect('swagger/'+token)
+        else:
+            return render(request,'login.html',{"message":"please login with correct credentials"})
+    return render(request,'login.html')
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -40,8 +73,10 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('yourappname.urls')),
+    path('apiconsole',include('auth_app.urls')),
+    path('',login),
     # path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('swagger/'+token, schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 
 
 ]

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     # JWT
     'rest_framework_simplejwt',
+    'auth_app',
 ]
 
 # JWT
@@ -87,12 +88,28 @@ WSGI_APPLICATION = 'yourprojectname.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'auth1',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+        'ENGINE': 'djongo',
+        'NAME': 'auth1',
+        # Abhishek Commented port setting for database configuration, to be used only if database is on another instance
+        'CLIENT': {
+            'host': '13.126.55.93',
+            'port': 27017,
+            'username': 'devops_admin',
+            'password': 'Vivij0019ej',
+            'authsource': 'admin',
+
+}}}
+
 
 
 # Password validation
